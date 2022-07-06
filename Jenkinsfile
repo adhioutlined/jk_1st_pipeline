@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'cowsay boo'
+                sh 'cowsay I_am_gr00t'
             }
         }
     }
