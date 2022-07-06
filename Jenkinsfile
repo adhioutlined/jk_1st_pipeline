@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'whalesay:latest' } }
+    agent { docker { image 'whalesay' } }
     stages {
         stage('build') {
             steps {
