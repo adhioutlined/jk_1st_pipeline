@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'python:3.10.1-alpine' } }
+    agent { docker { image 'whalesay:latest' } }
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                sh 'cowsay boo'
             }
         }
     }
