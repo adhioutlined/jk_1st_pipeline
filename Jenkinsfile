@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'cowsay I_am_gr00t'
+                sh 'tgl=($date)'
+                sh 'cowsay "Hi, Hello... Today is $tgl"'
             }
         }
     }
